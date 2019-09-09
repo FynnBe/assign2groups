@@ -78,7 +78,7 @@ def assign2groups(file_path: Path, bad_assignment_cost=255):
             writer.writerow([names[ri]] + [""] * group_number_from_index[ci] + [costs[ri, ci]])
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Assign participants to groups.")
     parser.add_argument(
         "csv_file",
